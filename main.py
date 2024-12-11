@@ -15,5 +15,3 @@ print(ana)
 print(a.getAnagram(ana))
 
 print(a.getAnagram("zoom op bergen")) # bergen op zoom
-
-print(a.getAnagram("Nep station")) # bestaat niet
