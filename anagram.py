@@ -1,4 +1,8 @@
-class Anagrams():
+class Anagram():
+    """
+    Anagram class is initialized with list of possible anagrams. getAnagrams
+    function returns original for given anagram.
+    """
     def __init__(self, words):
         self.lut = dict()
 
