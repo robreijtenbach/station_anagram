@@ -4,4 +4,3 @@ Station anagram bot is een Telegram bot die je kan gebruiken om de NS anagram ra
 
 ## TODO
 - anagram class afmaken 
-- save functionaliteit voor stationscraper
