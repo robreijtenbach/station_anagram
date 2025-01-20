@@ -27,13 +27,13 @@ async def start_command(update, context):
 
 # Messages
 async def handle_message(update, context):
-    log(f"Message: {update.message.text}, User: {update.from_user}")
+    log(f"Message: {update.message.text}, User: {update.message.from_user}")
     text = anagram.getAnagram(update.message.text)
     if not text:
         text = "Voor deze input heb ik geen station kunnen vinden, weet je"\
                 "zeker dat je het correct hebt getypt?"
     
-    log(f"Reply: {text}, ToUser: {update.from_user}")
+    log(f"Reply: {text}, ToUser: {update.message.from_user}")
     await update.message.reply_text(text)
 
 # Errors
