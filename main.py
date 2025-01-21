@@ -20,11 +20,11 @@ def log(txt):
 # Commands
 async def start_command(update, context):
     log(f"Update: {update}")
-    await update.message.reply_text("Hallo, stuur een berichtje met de"\
-                                    "gehusselde letters van een stationsnaam"\
-                                    "zoals in de NS puzzels en je krijgt het"\
-                                    "juiste station terug. Voorbeeld:"\ 
-                                    "'Armbandatelier jammers' resulteert in"\
+    await update.message.reply_text("Hallo, stuur een berichtje met de "\
+                                    "gehusselde letters van een stationsnaam "\
+                                    "zoals in de NS puzzels en je krijgt het "\
+                                    "juiste station terug. Voorbeeld: "\
+                                    "'Armbandatelier jammers' resulteert in "\
                                     "'Amsterdam Bijlmer Arena'")
 
 # Messages

@@ -23,7 +23,7 @@ class StationScraper():
             if recent.split("-")[:2] != datestring.split("-")[:2]:
                 renew = True
             else:
-                with open(recent, rb) as f:
+                with open(recent, 'rb') as f:
                     self.df = pickle.load(f)
         else:
             renew = True
@@ -37,9 +37,6 @@ class StationScraper():
                     pickle.dump(self.df, f)
             except:
                 pass
-                
-                    
-
 
     def getNames(self):
         return list(self.df['Naam'])
