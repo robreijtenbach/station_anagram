@@ -23,7 +23,9 @@ async def start_command(update, context):
     await update.message.reply_text("Hallo, stuur een berichtje met de"\
                                     "gehusselde letters van een stationsnaam"\
                                     "zoals in de NS puzzels en je krijgt het"\
-                                    "juiste station terug")
+                                    "juiste station terug. Voorbeeld:"\ 
+                                    "'Armbandatelier jammers' resulteert in"\
+                                    "'Amsterdam Bijlmer Arena'")
 
 # Messages
 async def handle_message(update, context):
